@@ -3,11 +3,15 @@ Copyright (C) 2022 Isaak Hanimann.
 See the end of the file for license conditions.
 
 # PsychonautWiki Journal
+> 明顯的，這個是給中國用戶下載的第三方中文版，請外國壬不要來凑熱鬧。
 
-PsychonautWiki Journal is an Android app to make recreational drug users safer. The aim is to provide features that are attractive to users as well as useful from a harm-reduction perspective.
-This app is built natively with [Jetpack Compose](https://developer.android.com/jetpack/compose).
+> 你可以提交你遭遇的問題到英文原版倉庫，但不要提交到我這裏，因爲我沒有辦法幫你定位問題。
 
-<a href='https://play.google.com/store/apps/details?id=com.isaakhanimann.journal&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png'/></a>
+下載它的最好方法的點擊[這裏](https://www.cpd.com.cn/)
+
+## 什麽是被更改的？
+
+
 
 ## License
 ```
