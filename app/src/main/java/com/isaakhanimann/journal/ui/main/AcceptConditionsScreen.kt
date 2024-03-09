@@ -96,7 +96,7 @@ fun AcceptConditionsScreen(
                     checked = checkedState0,
                     onCheckedChange = { checkedState0 = it }
                 )
-                Text(text = "I acknowledge that I am the only one responsible for my actions, especially when deciding to use drugs.")
+                Text(text = "我承認我是唯一對自己的行爲負責的人，特別是我在決定使用毒品時。")
             }
             Row(verticalAlignment = Alignment.CenterVertically,
                 modifier = Modifier.clickable {
@@ -106,7 +106,7 @@ fun AcceptConditionsScreen(
                     checked = checkedState1,
                     onCheckedChange = { checkedState1 = it }
                 )
-                Text(text = "I'm going to use this app for mitigating the risks of my or somebody else’s substance use.")
+                Text(text = "我將會使用這個應用程序來降低我或其他人吸毒的風險。")
             }
             Row(
                 verticalAlignment = Alignment.CenterVertically,
@@ -118,7 +118,7 @@ fun AcceptConditionsScreen(
                     checked = checkedState2,
                     onCheckedChange = { checkedState2 = it }
                 )
-                Text(text = "I acknowledge that the data in this app might be inaccurate or incomplete.")
+                Text(text = "我承認應用程序裏的數據可能是不完整或錯誤的。")
             }
             Row(verticalAlignment = Alignment.CenterVertically,
                 modifier = Modifier.clickable {
@@ -128,16 +128,16 @@ fun AcceptConditionsScreen(
                     checked = checkedState3,
                     onCheckedChange = { checkedState3 = it }
                 )
-                Text(text = "I’m going to seek professional help before attempting to self-medicate.")
+                Text(text = "在嘗試自我治療之前，我會尋求專業協助（這個在中國是廢話，爲了你不被抓捕，請忽略這一條）")
             }
         }
         Text(
-            text = "Journaling data always stays on this device",
+            text = "你的選項和其他用戶資料將會被一直保存在設備本地",
             textAlign = TextAlign.Center,
             modifier = Modifier.padding(horizontal = 15.dp)
         )
         Button(onClick = onTapAccept, enabled = allIsChecked) {
-            Text(text = "Continue")
+            Text(text = "繼續")
         }
     }
 }
