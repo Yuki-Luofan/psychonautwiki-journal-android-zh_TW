@@ -40,7 +40,7 @@ import com.isaakhanimann.journal.ui.theme.horizontalPadding
 fun DoseExplanationScreen() {
     Scaffold(
         topBar = {
-            TopAppBar(title = { Text("Dosage Classification") })
+            TopAppBar(title = { Text("劑量分類") })
         }
     ) { padding ->
         Column(
@@ -52,8 +52,8 @@ fun DoseExplanationScreen() {
             VerticalSpace()
             ElevatedCard(modifier = Modifier.padding(vertical = 5.dp, horizontal = horizontalPadding)) {
                 Text(
-                    text = "The range and intensity of the effects of a substance depends on upon a number of factors. These include route of administration, dosage, set and setting, and personal and environmental factors.\n" +
-                            "Effective doses can be divided into five categories: threshold, light, common, strong, and heavy.",
+                    text = "物質作用的範圍和強度取決於許多因素。這些包括給藥途徑、劑量、設定和環境以及個人和環境因素。\n" +
+                            "有效劑量可分為五類：閾值、輕、普通、強、重。",
                     textAlign = TextAlign.Left,
                     modifier = Modifier
                         .padding(vertical = 10.dp, horizontal = horizontalPadding)
