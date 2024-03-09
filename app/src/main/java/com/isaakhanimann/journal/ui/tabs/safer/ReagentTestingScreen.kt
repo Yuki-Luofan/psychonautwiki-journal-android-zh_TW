@@ -47,7 +47,7 @@ fun ReagentTestingScreen(
 ) {
     Scaffold(
         topBar = {
-            TopAppBar(title = { Text("Reagent Testing") })
+            TopAppBar(title = { Text("試劑檢測清單") })
         },
         floatingActionButton = {
             ExtendedFloatingActionButton(
@@ -72,9 +72,9 @@ fun ReagentTestingScreen(
             ElevatedCard(modifier = Modifier.padding(vertical = 3.dp)) {
                 Column(modifier = Modifier.padding(horizontal = horizontalPadding)) {
                     SectionText(
-                        text = """Reagent testing kits is a drug testing method that uses chemical solutions that change in color when applied to a chemical compound. They can help determine what chemical might be present in a given sample. In many cases they do not rule out the possibility of another similar compound being present in addition to or instead of the one suspected.
-Although very few substances are effective at dosages that allow the use of paper blotters, LSD is not the only one: It's essential to test for its presence to avoid substances of the NBOMe class. Additionally, it's becoming increasingly important to test for possible Fentanyl contamination, since this substance is effective at dosages that make it possible to put very high quantities on a single blotter.
-Reagents can only determine the presence, not the quantity or purity, of a particular substance. Dark color reactions will tend to override reactions to other substances also in the pill. A positive or negative reaction for a substance does not indicate that a drug is safe. No drug use is 100% safe. Make wise decisions and take responsibility for your health and well-being; no one else can."""
+                        text = """試劑測試套件是一種藥物測試方法，使用化學溶液，當應用於化合物時會改變顏色。它們可以幫助確定給定樣品中可能存在哪些化學物質。在許多情況下，他們不排除除了可疑化合物之外或代替可疑化合物還存在另一種類似化合物的可能性。
+儘管很少有物質在允許使用吸墨紙的劑量下有效，但 LSD 並不是唯一的一種：必須測試其存在以避免 NBOMe 類物質。此外，測試可能的芬太尼污染變得越來越重要，因為這種物質在劑量下有效，使得可以在一張吸墨紙上放置大量的芬太尼。
+試劑只能確定特定物質的存在，而不能確定其數量或純度。深色反應往往凌駕於藥丸中其他物質的反應。某種物質的陽性或陰性反應並不表示該藥物是安全的。沒有一種藥物的使用是 100% 安全的。做出明智的決定並對您的健康和福祉負責；沒有其他人可以。"""
                     )
                     VerticalSpace()
                 }
@@ -84,7 +84,7 @@ Reagents can only determine the presence, not the quantity or purity, of a parti
                     Modifier.padding(vertical = 5.dp)
                 ) {
                     Text(
-                        text = "Kit Sellers",
+                        text = "套件賣家",
                         style = MaterialTheme.typography.titleMedium,
                         modifier = Modifier.padding(horizontal = 10.dp)
                     )
