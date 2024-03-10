@@ -11,6 +11,7 @@ See the end of the file for license conditions.
 
 ## 什麽是被更改的？
 
+請查看[這裏](https://github.com/isaakhanimann/psychonautwiki-journal-android/compare/main...Yuki-Luofan:psychonautwiki-journal-android-zh_TW:main)
 
 
 ## License
