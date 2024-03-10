@@ -125,7 +125,7 @@ fun SettingsScreen(
     Scaffold(
         topBar = {
             TopAppBar(
-                title = { Text("Settings") }
+                title = { Text("設置") }
             )
         },
         snackbarHost = { SnackbarHost(snackbarHostState) },
@@ -137,32 +137,32 @@ fun SettingsScreen(
                 .fillMaxSize()
                 .verticalScroll(rememberScrollState())
         ) {
-            CardWithTitle(title = "UI", innerPaddingHorizontal = 0.dp) {
+            CardWithTitle(title = "UI界面", innerPaddingHorizontal = 0.dp) {
                 SettingsButton(
                     imageVector = Icons.Outlined.Medication,
-                    text = "Custom Units"
+                    text = "客製化部件"
                 ) {
                     navigateToCustomUnits()
                 }
                 Divider()
                 SettingsButton(
                     imageVector = Icons.Outlined.Palette,
-                    text = "Substance Colors"
+                    text = "物質顏色"
                 ) {
                     navigateToSubstanceColors()
                 }
                 Divider()
                 SettingsButton(
                     imageVector = Icons.Outlined.WarningAmber,
-                    text = "Interaction Settings"
+                    text = "互動設定"
                 ) {
                     navigateToComboSettings()
                 }
 
             }
-            CardWithTitle(title = "App Data", innerPaddingHorizontal = 0.dp) {
+            CardWithTitle(title = "應用程式數據", innerPaddingHorizontal = 0.dp) {
                 var isShowingExportDialog by remember { mutableStateOf(false) }
-                SettingsButton(imageVector = Icons.Outlined.FileUpload, text = "Export File") {
+                SettingsButton(imageVector = Icons.Outlined.FileUpload, text = "匯出文件") {
                     isShowingExportDialog = true
                 }
                 val jsonMIMEType = "application/json"
@@ -180,10 +180,10 @@ fun SettingsScreen(
                     AlertDialog(
                         onDismissRequest = { isShowingExportDialog = false },
                         title = {
-                            Text(text = "Export?")
+                            Text(text = "要輸出到哪裏？")
                         },
                         text = {
-                            Text("This will export all your data from the app into a file so you can send it to someone or import it again on a new phone")
+                            Text("這會將您的所有資料從應用程式匯出到一個檔案中，以便您可以將其發送給某人或在新手機上再次匯入")
                         },
                         confirmButton = {
                             TextButton(
@@ -192,21 +192,21 @@ fun SettingsScreen(
                                     launcherExport.launch("Journal ${Instant.now().getStringOfPattern("dd MMM yyyy")}.json")
                                 }
                             ) {
-                                Text("Export")
+                                Text("選擇位置")
                             }
                         },
                         dismissButton = {
                             TextButton(
                                 onClick = { isShowingExportDialog = false }
                             ) {
-                                Text("Cancel")
+                                Text("取消")
                             }
                         }
                     )
                 }
                 Divider()
                 var isShowingImportDialog by remember { mutableStateOf(false) }
-                SettingsButton(imageVector = Icons.Outlined.FileDownload, text = "Import File") {
+                SettingsButton(imageVector = Icons.Outlined.FileDownload, text = "匯入文件") {
                     isShowingImportDialog = true
                 }
                 val launcherImport =
@@ -219,10 +219,10 @@ fun SettingsScreen(
                     AlertDialog(
                         onDismissRequest = { isShowingImportDialog = false },
                         title = {
-                            Text(text = "Import File?")
+                            Text(text = "從哪裏導入文件？")
                         },
                         text = {
-                            Text("Import a file that was exported before. Note that this will delete the data that you already have in the app.")
+                            Text("導入之前匯出的文件。請注意，這將刪除您應用程式中已有的資料。")
                         },
                         confirmButton = {
                             TextButton(
@@ -231,14 +231,14 @@ fun SettingsScreen(
                                     launcherImport.launch(jsonMIMEType)
                                 }
                             ) {
-                                Text("Import")
+                                Text("選擇位置")
                             }
                         },
                         dismissButton = {
                             TextButton(
                                 onClick = { isShowingImportDialog = false }
                             ) {
-                                Text("Cancel")
+                                Text("取消")
                             }
                         }
                     )
@@ -247,7 +247,7 @@ fun SettingsScreen(
                 var isShowingDeleteDialog by remember { mutableStateOf(false) }
                 SettingsButton(
                     imageVector = Icons.Outlined.DeleteForever,
-                    text = "Delete Everything"
+                    text = "刪除數據"
                 ) {
                     isShowingDeleteDialog = true
                 }
@@ -256,10 +256,10 @@ fun SettingsScreen(
                     AlertDialog(
                         onDismissRequest = { isShowingDeleteDialog = false },
                         title = {
-                            Text(text = "Delete Everything?")
+                            Text(text = "要刪除數據嗎?")
                         },
                         text = {
-                            Text("This will delete all your experiences, ingestions and custom substances.")
+                            Text("恁是否要刪除數據？只有小廢物才會這麽做的，你是被條子找了嗎？")
                         },
                         confirmButton = {
                             TextButton(
@@ -274,14 +274,14 @@ fun SettingsScreen(
                                     }
                                 }
                             ) {
-                                Text("Delete")
+                                Text("我是小廢物")
                             }
                         },
                         dismissButton = {
                             TextButton(
                                 onClick = { isShowingDeleteDialog = false }
                             ) {
-                                Text("Cancel")
+                                Text("取消")
                             }
                         }
                     )
@@ -295,20 +295,26 @@ fun SettingsScreen(
                 Divider()
                 SettingsButton(
                     imageVector = Icons.Outlined.ContactSupport,
-                    text = "Question / Feedback / Bug Report"
+                    text = "問題/回饋/錯誤報告"
                 ) {
                     uriHandler.openUri("https://t.me/+ss8uZhBF6g00MTY8")
                 }
                 Divider()
-                SettingsButton(imageVector = Icons.Outlined.VolunteerActivism, text = "Donate") {
+                SettingsButton(imageVector = Icons.Outlined.VolunteerActivism, text = "捐獻") {
                     uriHandler.openUri("https://www.buymeacoffee.com/isaakhanimann")
                 }
             }
             CardWithTitle(title = "App", innerPaddingHorizontal = 0.dp) {
-                SettingsButton(imageVector = Icons.Outlined.Code, text = "Source Code") {
+                SettingsButton(imageVector = Icons.Outlined.Code, text = "原始碼倉庫") {
                     uriHandler.openUri("https://github.com/isaakhanimann/psychonautwiki-journal-android")
                 }
                 Divider()
+
+                SettingsButton(imageVector = Icons.Outlined.Code, text = "漢化倉庫") {
+                    uriHandler.openUri("https://github.com/Yuki-Luofan/psychonautwiki-journal-android-zh_TW")
+                }
+                Divider()
+
                 val context = LocalContext.current
                 val sendIntent: Intent = Intent().apply {
                     action = Intent.ACTION_SEND
