@@ -7,7 +7,7 @@ See the end of the file for license conditions.
 
 > 你可以提交你遭遇的問題到英文原版倉庫，但不要提交到我這裏，因爲我沒有辦法幫你定位問題。
 
-下載它的最好方法的點擊[這裏](https://www.cpd.com.cn/)
+下載它的最好方法的點擊[這裏](https://github.com/Yuki-Luofan/psychonautwiki-journal-android-zh_TW/releases/tag/test)
 
 ## 什麽是被更改的？
 
