@@ -46,24 +46,24 @@ fun FAQScreen() {
         ) {
             Spacer(modifier = Modifier.height(5.dp))
             QuestionAnswerRow(
-                question = "Where does the information come from?",
-                answer = "Dosages, durations, interactions, tolerance, common names, psychoactive classes, toxicity and addiction potential come from PsychonautWiki. Substance summaries and additional categories come from Tripsit. Effects, dosage remarks, general & long term risks and safer use come from the DIZ (drug information center of Zurich)."
+                question = "你們的資訊從哪裡來？",
+                answer = "劑量、持續時間、交互作用、耐受性、通用名稱、精神活性類別、毒性和成癮潛力來自 PsychonautWiki。物質摘要和其他類別來自 Tripsit。效果、劑量備註、一般和長期風險以及更安全的使用來自 DIZ（蘇黎世藥物資訊中心）。"
             )
             QuestionAnswerRow(
-                question = "When does the app detect interactions?",
-                answer = "If there is an interaction with a substance you ingested less than 2 days ago. It checks interaction both ways and checks if a substance is indirectly mentioned through its psychoactive class."
+                question = "應用程式何時檢測互動？",
+                answer = "如果與您不到 2 天前攝入的物質發生交互作用。它檢查雙向相互作用，並檢查某種物質是否透過其精神活性類別間接提及。"
             )
             QuestionAnswerRow(
-                question = "How can the information be changed or added?",
-                answer = "Edit the article in PsychonautWiki so your edit might get approved by one of the PsychonautWiki moderators, especially if you can reference good sources. The changed information will come in the next update of the app. If the information to be changed comes from another source than PsychonautWiki contact support."
+                question = "如何更改或添加資訊？",
+                answer = "在 PsychonautWiki 中編輯文章，以便您的編輯可能會得到 PsychonautWiki 版主之一的批准，特別是如果您可以引用好的來源。更改的資訊將在應用程式的下一次更新中出現。如果要變更的資訊來自 PsychonautWiki 以外的其他來源，請聯絡支援人員。"
             )
             QuestionAnswerRow(
-                question = "Why does the timeline treat every ingestion independently?",
-                answer = "Because the information on tolerance and cross tolerance does not yet allow to do this reliably."
+                question = "為什麼時間軸會獨立處理每次攝取？",
+                answer = "因為關於耐受性和交叉耐受性的信息還不允許可靠地做到這一點。"
             )
             QuestionAnswerRow(
-                question = "What do the dots next to the dose of the ingestion mean?",
-                answer = "0 dots means that the dose is less than threshold, 1: light, 2: common, 3: strong, 4: heavy. More than 4 dots means that the heavy dose is subtracted and the remainder is again classified in terms of light, common and strong."
+                question = "攝取劑量旁邊的點是什麼意思？",
+                answer = "0點表示劑量低於閾值，1：輕，2：一般，3：強，4：重。超過4點表示減去重劑量，剩下的再按輕、普通、強進行分類。"
             )
         }
     }
